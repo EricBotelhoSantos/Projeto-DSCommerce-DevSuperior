@@ -16,6 +16,13 @@ public class ProductController {
     @Autowired
     private ProductRepository repository;
 
+    /*Primeiro código teste de API expondo "Olá mundo"
+        @GetMapping
+        public String teste() {
+          return "Olá mundo!";
+        }
+    */
+
     @GetMapping
     public String teste () {
        Optional<Product> reuslt = repository.findById(1L);
